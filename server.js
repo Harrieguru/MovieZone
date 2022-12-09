@@ -12,21 +12,21 @@ app.use(expressLayouts)
 app.use(express.static('public'))
 
 //sample code to connect to sql
-var connection = new ActiveXObject("ADODB.Connection");
+// var connection = new ActiveXObject("ADODB.Connection");
 
-var connectionstring = "Data Source=<server>; Initial Catalog=<catalog>;UserID=<user>;Password=<password>;Provider=SQLOLEDB";
-connection.open(connectionstring);
-var rs = new ActiveXObject("ADODB.Recordset");
+// var connectionstring = "Data Source=<server>; Initial Catalog=<catalog>;UserID=<user>;Password=<password>;Provider=SQLOLEDB";
+// connection.open(connectionstring);
+// var rs = new ActiveXObject("ADODB.Recordset");
 
-rs.Open("SELECT * FROM table",connection);
-rs.MoveFirst
-while(!rs.eof)
-{
-    document.write(rs.fields(1));
-    rs.movenext;
-}
-rs.close;
-connection.close;
+// rs.Open("SELECT * FROM table",connection);
+// rs.MoveFirst
+// while(!rs.eof)
+// {
+//     document.write(rs.fields(1));
+//     rs.movenext;
+// }
+// rs.close;
+// connection.close;
 
 app.use('/', indexRouter)
 

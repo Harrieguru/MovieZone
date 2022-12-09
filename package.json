@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "oracledb": "^5.5.0"
   }
 }
