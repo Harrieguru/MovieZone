@@ -5,4 +5,14 @@ router.get('/',(req,res,next) => {
     res.render('index')
 })
 
+router.get('/reviews',(req,res,next) => {
+    res.render('index/reviews')
+})
+
+
+router.post('/download',(req,res,next) => {
+    res.send('index/download')
+})
+
+
 module.exports = router;
